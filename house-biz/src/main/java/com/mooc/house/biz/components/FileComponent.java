@@ -19,7 +19,7 @@ import java.util.List;
 @Component
 public class FileComponent {
     @Value("${file.path:}")
-    private String filePath;
+        private String filePath;
 
     public List<String> getImgPaths(List<MultipartFile> files) {
         if (Strings.isNullOrEmpty(filePath)) {
